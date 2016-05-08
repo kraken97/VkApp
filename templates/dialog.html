@@ -1,0 +1,10 @@
+<div class="col-md-6">
+    <form action="/fFriends/" method="POST" class="send-msg">
+        {% csrf_token %}
+        {{ form_msg }}
+        <input   class="users_list">
+        <input type="submit">
+    </form>
+    <div class="col-md-16 messages messagesScroll" >
+    </div>
+</div>

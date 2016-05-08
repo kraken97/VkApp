@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<script>
+
+var data = new Set();
+
+$(document).ready(function () {
+
+    // using jQuery
+    function getCookie(name) {
+        var cookieValue = null;
+        if (document.cookie && document.cookie != '') {
+            var cookies = document.cookie.split(';');
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = jQuery.trim(cookies[i]);
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    var csrftoken = getCookie('csrftoken');
+    function csrfSafeMethod(method) {
+        // these HTTP methods do not require CSRF protection
+        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+    }
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
+
+    $("div.user").click(function () {
+        if($(this).hasClass("selected")){
+            $(this).removeClass("selected");
+            data.delete($(this).children("p").text())
+
+        }
+        else{
+            $(this).addClass("selected");
+            console.log($(this).children("p").text());
+            data.add($(this).children("p").text());
+            console.log(data)
+
+        }
+
+});
+    $(".send-msg").submit(function(e) {
+        var text =$("#id_msg").val();
+        $("#id_msg").val('');
+        console.log("send req");
+        console.log(data);
+        var url = "/fFriends"; // the script where you handle the form input.
+        let arr = Array.from(data);
+        console.log(JSON.stringify(arr));
+
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: url,
+            data:{users_list: JSON.stringify(arr),post_text:text},
+            success: function(data)
+            {
+
+                $(".messages").prepend("<p class=\"alignBot\" style=\"vertical-align:bottom\">"+data+"</p>");
+            }
+        });
+
+
+        e.preventDefault(); // avoid to execute the actual submit of the form.
+    });
+ $(".add_dialog").click(function (e) {
+     let arr = Array.from(data);
+     console.log(arr);
+
+     $(".container").append(`{% include "dialog.html" with form_msg=form_msg%}`);
+     $(".container").children(".send-msg").last(".").attr("value",JSON.stringify(arr))
+});});
+</script>
+
+<style>
+    .selected{
+        background-color: blue;
+    }
+
+    .alignBot{
+        display: table-row;
+        width:50%;
+        vertical-align: bottom;
+        height: 100%;
+    }
+    .messagesScroll{
+        overflow: auto;
+        height: 800px;
+    }
+
+    .users_list{
+        height:800px;width:200px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;
+    }
+</style>
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+</head>
+
+<body>
+
+{% block content %}
+<div class="container">
+
+    <div class="col-md-4"  >
+    <div class="users_list">
+    {% for usr in users %}
+         {%  include "User.html" with user=usr %}
+    {% endfor %}
+    </div>
+    <input type="button" class="add_dialog">
+    </div>
+
+
+    <div class="col-md-6">
+      <form action="/fFriends/" method="POST" class="send-msg">
+        {% csrf_token %}
+        {{ form_msg }}
+        <input type="submit">
+        </form>
+        <div class="col-md-16 messages messagesScroll" >
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+</body>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</html>
