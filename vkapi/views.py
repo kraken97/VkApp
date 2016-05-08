@@ -34,7 +34,11 @@ def send_message(request):
     else:
         return  render(request,'tokenform.html',{'form':TokenConfirm})
 
-def get_token(request):
+def get_token(request,code):
+    return redirect("https://oauth.vk.com/access_token",client_id=5446940,client_secret="v4v8sdeSxBLZKP272Vqu",redirect_uri="https://krakenvkapp.herokuapp.com/fFriends",code=code)
+
+
+def confirmtoken(request):
     if request.method=="POST":
         form = TokenConfirm(request.POST)
         if form is not None and form.is_valid():
