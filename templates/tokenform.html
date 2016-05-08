@@ -3,7 +3,7 @@
 
 <div class="col-md-4">
     <a href="https://oauth.vk.com/authorize?client_id=5446940&display=page&redirect_uri=https://oauth.vk.com/blank.html&scope=wall,friends,wall,messages&response_type=token&v=5.52">Получить токен</a>
-    <form action="/msg/" method="post">
+    <form action="/token/" method="post">
         {% csrf_token %}
         {{ form }}
         <input type="submit" value="Submit" />
