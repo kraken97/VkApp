@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a7d17d44-3de9-4579-a382-fbc9430a3d31" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VkApp/urls.py" afterPath="$PROJECT_DIR$/VkApp/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/portfolio/Header.html" afterPath="$PROJECT_DIR$/templates/portfolio/Header.html" />
     </list>
     <ignored path="VkApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,11 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Header.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/portfolio/Header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1012">
-              <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+            <state relative-caret-position="11440">
+              <caret line="520" column="96" selection-start-line="520" selection-start-column="96" selection-end-line="520" selection-end-column="96" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -154,7 +154,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
@@ -207,8 +207,8 @@
         <option value="$PROJECT_DIR$/vkapi/FriendsList.py" />
         <option value="$PROJECT_DIR$/portfolio/urls.py" />
         <option value="$PROJECT_DIR$/portfolio/views.py" />
-        <option value="$PROJECT_DIR$/templates/portfolio/Header.html" />
         <option value="$PROJECT_DIR$/VkApp/urls.py" />
+        <option value="$PROJECT_DIR$/templates/portfolio/Header.html" />
       </list>
     </option>
   </component>
@@ -318,20 +318,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VkApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VkApp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="portfolio" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1144,7 +1130,7 @@
       <workItem from="1463037171783" duration="8862000" />
       <workItem from="1463050028809" duration="5306000" />
       <workItem from="1463137921060" duration="1421000" />
-      <workItem from="1463744190325" duration="5404000" />
+      <workItem from="1463744190325" duration="5575000" />
     </task>
     <task id="LOCAL-00001" summary="Deploоy">
       <created>1462718693902</created>
@@ -1216,11 +1202,18 @@
       <option name="project" value="LOCAL" />
       <updated>1463749166656</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Deploоy">
+      <created>1463749624308</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1463749624308</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95129000" />
+    <option name="totallyTimeSpent" value="95300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1853" height="1046" extended-state="6" />
@@ -1645,10 +1638,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VkApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding>
+            <element signature="e#638#679#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/portfolio/Header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+        <state relative-caret-position="11440">
+          <caret line="520" column="96" selection-start-line="520" selection-start-column="96" selection-end-line="520" selection-end-column="96" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1669,26 +1682,6 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VkApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-          <folding>
-            <element signature="e#638#679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
