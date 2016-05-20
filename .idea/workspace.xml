@@ -2,34 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7d17d44-3de9-4579-a382-fbc9430a3d31" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react-dom-server.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react-dom-server.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react-dom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react-dom.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react-with-addons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react-with-addons.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/build/react.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/portfolio/Header.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/Select.js" afterPath="$PROJECT_DIR$/templates/old/Select.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/User.html" afterPath="$PROJECT_DIR$/templates/old/User.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/dialog.html" afterPath="$PROJECT_DIR$/templates/old/dialog.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/friends.html" afterPath="$PROJECT_DIR$/templates/old/friends.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/sendmessage.html" afterPath="$PROJECT_DIR$/templates/old/sendmessage.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/tokenform.html" afterPath="$PROJECT_DIR$/templates/old/tokenform.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/portfolio/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VkApp/urls.py" afterPath="$PROJECT_DIR$/VkApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vkapi/FriendsList.py" afterPath="$PROJECT_DIR$/vkapi/FriendsList.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vkapi/views.py" afterPath="$PROJECT_DIR$/vkapi/views.py" />
     </list>
     <ignored path="VkApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,8 +93,8 @@
       <file leaf-file-name="Header.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/portfolio/Header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="84" column="66" selection-start-line="84" selection-start-column="66" selection-end-line="84" selection-end-column="66" />
+            <state relative-caret-position="1012">
+              <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -375,6 +355,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -1169,7 +1150,7 @@
       <workItem from="1463037171783" duration="8862000" />
       <workItem from="1463050028809" duration="5306000" />
       <workItem from="1463137921060" duration="1421000" />
-      <workItem from="1463744190325" duration="3838000" />
+      <workItem from="1463744190325" duration="4940000" />
     </task>
     <task id="LOCAL-00001" summary="Deploоy">
       <created>1462718693902</created>
@@ -1227,15 +1208,22 @@
       <option name="project" value="LOCAL" />
       <updated>1462727568105</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Deploоy">
+      <created>1463748120821</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1463748120821</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93563000" />
+    <option name="totallyTimeSpent" value="94665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1853" height="1046" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1245,11 +1233,11 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39885056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39885056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30689654" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24594745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24594745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979318" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986026" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1678,8 +1666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/portfolio/Header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="84" column="66" selection-start-line="84" selection-start-column="66" selection-end-line="84" selection-end-column="66" />
+        <state relative-caret-position="1012">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
