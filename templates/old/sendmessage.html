@@ -82,7 +82,7 @@ $(document).ready(function () {
      let arr = Array.from(data);
      console.log(arr);
 
-     $(".container").append(`{% include "dialog.html" with form_msg=form_msg%}`);
+     $(".container").append(`{% include "old/dialog.html" with form_msg=form_msg%}`);
      $(".container").children(".send-msg").last(".").attr("value",JSON.stringify(arr))
 });});
 </script>
@@ -127,7 +127,7 @@ $(document).ready(function () {
     <div class="col-md-4"  >
     <div class="users_list">
     {% for usr in users %}
-         {%  include "User.html" with user=usr %}
+         {%  include "old/User.html" with user=usr %}
     {% endfor %}
     </div>
     <input type="button" class="add_dialog">

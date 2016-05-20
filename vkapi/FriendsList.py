@@ -18,6 +18,7 @@ def send_msg(api, msg, users):
         user = int(user)
         api.messages.send(user_id=user, message=msg)
 
+
 def createList():
     api = create_api("c5bef065877b03c197c62935d7c19a57dca784a6fd2b51267e2230e2aec952742faad1f144fdf6d7cadfc")
     friends = get_friends_list(api)

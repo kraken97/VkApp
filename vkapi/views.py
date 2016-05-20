@@ -32,7 +32,7 @@ def send_message(request):
         print(request.POST.getlist('data'))
 
     else:
-        return  render(request,'tokenform.html',{'form':TokenConfirm})
+        return  render(request, 'old/tokenform.html', {'form':TokenConfirm})
 
 def get_token(request,code):
     return redirect("https://oauth.vk.com/access_token",client_id=5446940,client_secret="v4v8sdeSxBLZKP272Vqu",redirect_uri="https://krakenvkapp.herokuapp.com/fFriends",code=code)
@@ -44,9 +44,9 @@ def confirmtoken(request):
         if form is not None and form.is_valid():
             token = form.cleaned_data['token']
             print(token)
-        return  render(request,"sendmessage.html",{"users": get_friends_list(create_api(token)),"form_msg":Message})
+        return  render(request, "old/sendmessage.html", {"users": get_friends_list(create_api(token)), "form_msg":Message})
     else:
-        return  render(request,'tokenform.html',{'form':TokenConfirm})
+        return  render(request, 'old/tokenform.html', {'form':TokenConfirm})
 
 
 

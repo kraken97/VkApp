@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+    .city {display:none;}
+</style>
+<body class="w3-container">
+
+<div class="w3-display-container">
+    <img style="width: 100%" src="http://www.ultimate4wdequipment.com.au/media/wysiwyg/media-gall-vid-proj-fj.jpg" alt="Lights">
+    <div class="w3-display-botleft "></div>
+
+</div>
+
+<ul class="w3-navbar w3-card-8 w3-light-grey" >
+    <li><a href="#" class="w3-light-grey w3-hover-grey w3-xlarge" onclick="openCity('London')">London</a></li>
+    <li><a href="#" class="w3-light-grey w3-hover-grey w3-xlarge" onclick="openCity('Paris')">Paris</a></li>
+    <li><a href="#"  class=" w3-right w3-light-grey w3-hover-grey w3-xlarge " onclick="openCity('Tokyo')">Tokyo</a></li>
+    <li class="w3-right w3-light-grey w3-hover-grey w3-xlarge" onclick="openCity('Tokyo')"><a href="#">Link 3</a></li>
+</ul>
+
+<div id="London" class="w3-container city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="w3-container city w3-light-grey" style="margin-top: 20px">
+
+    <div class="w3-row">
+        <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+                <img  src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Nature" style="width:100%">
+            </a>
+        </div>
+        <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Fjords');">
+                <img  src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Fjords" style="width:100%">
+            </a>
+        </div>
+        <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+                <img  src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Mountains" style="width:100%">
+            </a>
+        </div>
+        <div class="w3-col s3 w3-container">
+            <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+                <img  src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Lights" style="width:100%">
+            </a>
+        </div>
+    </div><br>
+
+    <div id="Nature" class="picture w3-display-container">
+        <img  src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Nature" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'"
+        class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Nature</div>
+    </div>
+
+    <div id="Fjords" class="picture w3-display-container">
+        <img  src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Fjords" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'"
+        class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Fjords</div>
+    </div>
+
+    <div id="Mountains" class="picture w3-display-container">
+        <img src="http://www.w3schools.com/w3css/img_nature_wide.jpg" alt="Mountains" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'"
+        class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Mountains</div>
+    </div>
+
+    <div id="Lights" class="picture w3-display-container">
+        <img src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" alt="Lights" style="width:100%">
+  <span onclick="this.parentElement.style.display='none'"
+        class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+        <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Northern Lights</div>
+    </div>
+
+</div>
+
+<div id="Tokyo" class="w3-container city">
+    <div class="w3-content" style="max-width: 90%;margin-top: 20px">
+        <img class="mySlides" src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%">
+        <img class="mySlides" src="http://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%">
+        <img class="mySlides" src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%">
+
+        <div class="w3-row-padding w3-section">
+            <div class="w3-col s4">
+                <img class="demo w3-border w3-hover-shadow" src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%" onclick="currentDiv(1)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-border w3-hover-shadow" src="http://www.w3schools.com/w3css/img_nature_wide.jpg" style="width:100%" onclick="currentDiv(2)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-border w3-hover-shadow" src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%" onclick="currentDiv(3)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-border w3-hover-shadow" src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%" onclick="currentDiv(3)">
+            </div>
+            <div class="w3-col s4">
+                <img class="demo w3-border w3-hover-shadow" src="http://www.w3schools.com/w3css/img_mountains_wide.jpg" style="width:100%" onclick="currentDiv(3)">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    function openImg(imgName) {
+        var i, x;
+        x = document.getElementsByClassName("picture");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(imgName).style.display = "block";
+    }
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-border-red", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-border-red";
+    }
+    openCity("London")
+    function openCity(cityName) {
+        var i;
+        var x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(cityName).style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
