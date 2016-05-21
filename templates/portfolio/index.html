@@ -1,0 +1,9 @@
+
+
+{% for album in albums %}
+    <p>album: {{ album.album.album_description }}</p>
+    {% for item in album.data %}
+        <img src=" {{item.src}}"> </img>
+        <p>desc: {{item.img_description}}<p>
+    {% endfor %}
+{% endfor %}
